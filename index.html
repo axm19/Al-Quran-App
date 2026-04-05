@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Quran Al-Kareem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+    <header id="main-header">
+        <div class="header-content">
+            <h1 id="logo">القرآن الكريم</h1>
+            <div class="search-container">
+                <div class="input-wrapper">
+                    <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    <input type="text" id="surah-search" placeholder="Search by name or number...">
+                    <svg class="mic-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+                </div>
+            </div>
+            <div class="header-title-eng">NOBLE QURAN</div>
+        </div>
+    </header>
+
+    <main id="app-container">
+        <div class="hero-verse-card">
+            <div class="hero-content">
+                <h2 class="arabic-hero">إِنَّا نَحْنُ نَزَّلْنَا الذِّكْرَ وَإِنَّا لَهُ لَحَافِظُونَ</h2>
+                <div class="hero-divider"></div>
+                <div class="verse-details">
+                    <span class="verse-ref">Al-Hijr (The Rock) 15:9</span>
+                    <p class="verse-translation">"Indeed, it is We who sent down the Qur'an and indeed, We will be its guardian."</p>
+                </div>
+                <div class="verse-link">
+                    <span>Verse 9</span>
+                </div>
+            </div>
+        </div>
+
+        <section id="surah-dashboard">
+            <h2 class="section-title">Surah Index</h2>
+            <div id="surah-grid"></div>
+        </section>
+
+        <section id="surah-reading-container" style="display: none;">
+            <div class="reading-header">
+               <button id="back-to-dashboard">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="19" y1="12" x2="5" y2="12"></line>
+        <polyline points="12 19 5 12 12 5"></polyline>
+    </svg>
+    <span>Back to Index</span>
+</button>
+                <div id="reading-titles">
+                    <h2 id="reading-surah-arb"></h2>
+                    <span id="reading-surah-eng"></span>
+                </div>
+            </div>
+            <div id="ayah-reading-panel"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
